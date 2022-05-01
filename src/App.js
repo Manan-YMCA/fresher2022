@@ -4,6 +4,7 @@ function App() {
   return <div className="App">
     <div className="bg-red-300">Freshers</div>
     <div className="bg-red-300">Freshers check temp nikhil</div>
+    <div className="bg-red-300"> nikita</div>
   </div>;
 }
 
