@@ -17,9 +17,7 @@
 }
 
 .form-container {
-    margin-top: 2.5rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin: 3rem;
     display: flex;
     border-radius: 21px;
     background: #ffffff;
@@ -91,6 +89,7 @@ i {
 .item2 {
     width: 50%;
     height: 100%;
+    
 }
 #submit-button {
     padding: 5px;
