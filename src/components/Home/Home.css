@@ -13,11 +13,11 @@
 }
 
 .Home .LandingImage .Heading .Two {
-  @apply text-[80px] font-semibold;
+  @apply text-[50px] md:text-[80px] font-semibold;
 }
 .Home .LandingImage .Heading .Three {
-  @apply text-[20px]  font-light pl-2 w-[40%];
+  @apply text-[16px] md:text-[20px]  font-light pl-2 w-[80%] md:w-[40%] text-center md:text-left;
 }
 .Home .LandingImage .Heading .Four {
-  @apply rounded-full mt-6 px-8 py-2 text-[20px];
+  @apply rounded-full mt-6 px-6 md:px-8  md:py-2 text-[16px] md:text-[20px];
 }
