@@ -1,0 +1,9 @@
+.Navbar {
+  @apply absolute w-[99vw]  top-0 left-0 right-0 overflow-x-hidden z-10;
+}
+
+.Navbar .NavbarContent {
+  @apply flex items-center justify-between ;
+  @apply mx-6 py-4;
+  @apply border-b border-gray-50/50;
+}

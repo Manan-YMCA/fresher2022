@@ -1,9 +1,0 @@
-#grad1 {
-    height: 100vh;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(135deg, #F1EAEC, #F9E1E9, #ECE7F8, #E9EAFF, #E5F1FD, #F9E1E9, #F3E9EA);
-    text-align:center;
-    color:#FFFFFF;
-    font-size:60px;
-    font-family:Fantasy;
-  }

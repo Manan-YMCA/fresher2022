@@ -1,9 +1,23 @@
-#grad1 {
-    height: 100vh;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(135deg, #F1EAEC, #F9E1E9, #ECE7F8, #E9EAFF, #E5F1FD, #F9E1E9, #F3E9EA);
-    text-align:center;
-    color:#FFFFFF;
-    font-size:60px;
-    font-family:Fantasy;
-  }
+.Home .LandingImage {
+  @apply w-[100%] h-screen;
+}
+.Home .LandingImage .Image {
+  @apply w-[100%] h-[100%] object-cover relative;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+  box-shadow: 20px 20px 20px 20px black inset;
+}
+
+.Home .LandingImage .Heading {
+  @apply absolute inset-0 h-screen w-full;
+}
+
+.Home .LandingImage .Heading .Two {
+  @apply text-[80px] font-semibold;
+}
+.Home .LandingImage .Heading .Three {
+  @apply text-[20px]  font-light pl-2 w-[40%];
+}
+.Home .LandingImage .Heading .Four {
+  @apply rounded-full mt-6 px-8 py-2 text-[20px];
+}
