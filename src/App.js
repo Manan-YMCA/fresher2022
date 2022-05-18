@@ -14,19 +14,16 @@ import Login from "./components/Login/Login";
 function App() {
   const isMobile = useMediaQuery("(max-width: 1060px)");
   return (
-    <div className="App">
-      {/* <div className="navbar">
-        <Navbar />
-      </div> */}
+    <div className="App overflow-x-hidden">
       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Navbar />}>
-            <Route index element={<Home />} />
-            <Route path="/registration" element={<Registration />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/details" element={<Details />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
+          <Route index element={<Home />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/details" element={<Details />} />
+          <Route path="*" element={<NoPage />} />
+          {/* </Route> */}
         </Routes>
       </BrowserRouter>
       {/* <div className="home">
