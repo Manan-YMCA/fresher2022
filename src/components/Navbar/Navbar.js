@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
 import { NavLink } from "react-router-dom";
 import "./style.css";
-import { SidePanel } from "./SidePanel";
+import SideNav from "./SideNav";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
@@ -23,13 +23,7 @@ export default function Navbar(props) {
   return (
     <div className="Navbar">
       <div className="NavbarContent">
-        <GiHamburgerMenu
-          onClick={()=>setShowPanel((prev) => !prev)}
-          color="white"
-          size={30}
-          className="m-0 p-0 cursor-pointer"
-        />
-
+        <SideNav/>
         <div className="text-[24px]">
           <p className="">
             Reizo <span className="text-[#CE9C43]">2022</span>
