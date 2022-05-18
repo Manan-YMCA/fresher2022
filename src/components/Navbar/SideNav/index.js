@@ -7,7 +7,6 @@ import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     top: false,
@@ -25,21 +24,19 @@ export default function SwipeableTemporaryDrawer() {
     setState({ ...state, [anchor]: open });
   };
 
-  const list = (anchor) => (
-   <div className="w-[20rem]">hey</div>
-  );
+  const list = (anchor) => <div className="w-[20rem]">hey</div>;
 
   return (
     <div>
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}>
-             <GiHamburgerMenu
-        color="white"
-        size={30}
-        className="m-0 p-0 cursor-pointer"
-      /> 
-          </Button>
+          <div onClick={toggleDrawer(anchor, true)}>
+            <GiHamburgerMenu
+              color="white"
+              size={30}
+              className="m-0 p-0 cursor-pointer"
+            />
+          </div>
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

@@ -23,7 +23,7 @@ button {
 }
 
 .ButtonFormat {
-  @apply bg-transparent hover:bg-[#CE9C43] text-white font-semibold hover:text-white py-2 px-4 border border-[#CE9C43] hover:border-transparent rounded;
+  @apply bg-transparent hover:bg-[#CE9C43] text-white font-semibold hover:text-white py-2 px-4 border border-[#CE9C43] hover:border-transparent rounded transition-all;
 }
 .Golden {
   @apply text-[#CE9C43];
