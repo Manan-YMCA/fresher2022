@@ -1,5 +1,5 @@
 import { Fragment, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 import SideNav from "./SideNav";
 
@@ -11,16 +11,20 @@ const navigation = [
 export default function Navbar(props) {
 
   return (
-    <div className="Navbar">
+    <div className="Navbar text-white">
       <div className="NavbarContent">
-        <SideNav/>
+        <SideNav />
         <div className="text-[24px]">
-          <p className="">
-            Reizo <span className="text-[#CE9C43]">2022</span>
-          </p>
+          <Link to="/">
+            <p>
+              Reizo <span className="text-[#CE9C43]">2022</span>
+            </p>
+          </Link>
         </div>
         <div>
-          <button className="ButtonFormat">Get Passes</button>
+          <Link to="/registration">
+            <button className="ButtonFormat">Get Passes</button>
+          </Link>
         </div>
       </div>
     </div>

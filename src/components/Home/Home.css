@@ -1,5 +1,5 @@
 .Home .LandingImage {
-  @apply w-[100%] h-screen;
+  @apply w-[100%] h-screen text-white;
 }
 .Home .LandingImage .Image {
   @apply w-[100%] h-[100%] object-cover relative;

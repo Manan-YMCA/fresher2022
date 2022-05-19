@@ -14,13 +14,6 @@ body {
   @apply bg-black overflow-x-hidden;
 }
 
-p,
-div,
-span,
-button {
-  @apply text-white;
-  font-family: "Montserrat";
-}
 
 .ButtonFormat {
   @apply bg-transparent hover:bg-[#CE9C43] text-white font-semibold hover:text-white py-2 px-4 border border-[#CE9C43] hover:border-transparent rounded transition-all;
