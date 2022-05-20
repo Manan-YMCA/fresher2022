@@ -1,11 +1,12 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
-import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { motion } from "framer-motion";
+import MenuItem from "./MenuItem";
+import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
+import { GiPartyPopper } from "react-icons/gi";
+import { MdFaceRetouchingNatural } from "react-icons/md";
+import { FiHeart } from "react-icons/fi";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -23,8 +24,50 @@ export default function SwipeableTemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
+  const NavList = [
+    {
+      title: "Home",
+      Link: "/",
+      Icon: <AiOutlineHome className="text-[30px]" />,
+    },
+    {
+      title: "Events",
+      Link: "/Events",
+      Icon: <GiPartyPopper className="text-[30px]" />,
+    },
+    {
+      title: "Get Passes",
+      Link: "/registration",
+      Icon: <MdFaceRetouchingNatural className="text-[30px]" />,
+    },
+    {
+      title: "Sponsors",
+      Link: "/Sponsors",
+      Icon: <FiHeart className="text-[30px]" />,
+    },
+    {
+      title: "Contact us",
+      Link: "",
+      Icon: <AiOutlineMail className="text-[30px]" />,
+    },
+  ];
 
-  const list = (anchor) => <div className="w-[20rem]">hey</div>;
+  const list = (anchor) => (
+    <div className="w-[20rem] h-full SideNavBg">
+      <div className="pt-8 ">
+        {NavList.map((i, index) => (
+          <div onClick={toggleDrawer(anchor, false)}>
+            <MenuItem
+              // color={colors[index]}
+              title={i.title}
+              link={i.Link}
+              icon={i.Icon}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
     <div>
