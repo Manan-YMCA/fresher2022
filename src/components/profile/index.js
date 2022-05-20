@@ -29,7 +29,7 @@ const Profile = (props) => {
                 />
               </div>
             </div>
-            <div className="pt-5 text-[15px] md:text-[20px] leading-loose">
+            <div className="pt-5 text-[15px] md:text-[20px] 2xl:text-[25px] leading-loose">
               <p className="font-bold text-[#F7A440]">
                 Name: <span className="text-gray-600">Dude</span>
               </p>
