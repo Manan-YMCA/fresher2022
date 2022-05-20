@@ -40,6 +40,11 @@ export default function SwipeableTemporaryDrawer() {
       Icon: <MdFaceRetouchingNatural className="text-[30px]" />,
     },
     {
+      title: "My Pass",
+      Link: "/profile",
+      Icon: <MdFaceRetouchingNatural className="text-[30px]" />,
+    },
+    {
       title: "Sponsors",
       Link: "/Sponsors",
       Icon: <FiHeart className="text-[30px]" />,

@@ -1,5 +1,5 @@
 .Registration .Card {
-  @apply bg-[#F7A440]
+  @apply bg-[#F7A440] mb-6;
 }
 .MuiInput-underline:after{
     border-bottom-color: #CE9C43;

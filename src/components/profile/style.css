@@ -1,0 +1,20 @@
+.Profile {
+  @apply text-white px-[2rem] md:px-[5rem];
+}
+.Profile .Card {
+  @apply w-full bg-[#F7A440] rounded-md mb-6;
+}
+
+.Profile .Card .Pfp {
+  @apply h-[15rem] w-[15rem] transition-all;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.Profile .Card .Pfp:hover {
+  @apply rounded-md;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.Profile .Card .Content{
+    background-color: #f7f7f7;
+background-image: url("https://www.transparenttextures.com/patterns/food.png");
+}
