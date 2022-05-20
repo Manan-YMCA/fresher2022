@@ -1,7 +1,6 @@
 import * as React from "react";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { motion } from "framer-motion";
 import MenuItem from "./MenuItem";
 import { AiOutlineHome, AiOutlineMail } from "react-icons/ai";
 import { GiPartyPopper } from "react-icons/gi";
